@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: fluentd-splunk
-    image: gcr.io/falkonry-tercel/fluentd-splunk:1.1
+    image: docker.io/falkonry/fluentd-splunk:latest
     resources:
       limits:
         cpu: 100m
