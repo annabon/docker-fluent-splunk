@@ -42,6 +42,7 @@ ENV SPLUNK_SERVER localhost:8089
 ENV SPLUNK_AUTH admin:changme
 ENV SPLUNK_INDEX main
 ENV FLUENTD_ARGS --use-v1-config
+ENV KUBE_VERIFY_SSL true
 
 # Run the Fluentd service.
 ENTRYPOINT "exec" "td-agent" "$FLUENTD_ARGS"
